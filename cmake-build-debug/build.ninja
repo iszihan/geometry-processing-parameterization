@@ -1,0 +1,487 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: parametrization
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Order-only phony target for core
+
+build cmake_object_order_depends_target_core: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build CMakeFiles/core.dir/src/lscm.cpp.o: CXX_COMPILER__core_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/src/lscm.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/src/lscm.cpp.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../external/eigen -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/src
+
+build CMakeFiles/core.dir/src/tutte.cpp.o: CXX_COMPILER__core_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/src/tutte.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/src/tutte.cpp.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../external/eigen -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/src
+
+build CMakeFiles/core.dir/src/vector_area_matrix.cpp.o: CXX_COMPILER__core_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/src/vector_area_matrix.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/src/vector_area_matrix.cpp.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../external/eigen -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Link the static library libcore.a
+
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/src/lscm.cpp.o CMakeFiles/core.dir/src/tutte.cpp.o CMakeFiles/core.dir/src/vector_area_matrix.cpp.o || glad/libglad.a glfw/src/libglfw3.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -fPIC -g
+  OBJECT_DIR = CMakeFiles/core.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcore.a
+  TARGET_PDB = core.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target parametrization
+
+
+#############################################
+# Order-only phony target for parametrization
+
+build cmake_object_order_depends_target_parametrization: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build CMakeFiles/parametrization.dir/main.cpp.o: CXX_COMPILER__parametrization_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/main.cpp || cmake_object_order_depends_target_parametrization
+  DEP_FILE = CMakeFiles/parametrization.dir/main.cpp.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../include -isystem /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/../external/eigen -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/parametrization.dir
+  OBJECT_FILE_DIR = CMakeFiles/parametrization.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target parametrization
+
+
+#############################################
+# Link the executable parametrization
+
+build parametrization: CXX_EXECUTABLE_LINKER__parametrization_Debug CMakeFiles/parametrization.dir/main.cpp.o | libcore.a /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd glad/libglad.a glfw/src/libglfw3.a || glad/libglad.a glfw/src/libglfw3.a libcore.a
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LINK_LIBRARIES = libcore.a  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  glad/libglad.a  glfw/src/libglfw3.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  -framework CoreVideo
+  OBJECT_DIR = CMakeFiles/parametrization.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = parametrization
+  TARGET_PDB = parametrization.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization -B/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/libigl.cmake
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || glad/CMakeFiles/glad.dir
+
+build glad/CMakeFiles/glad.dir/src/glad.c.o: C_COMPILER__glad_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/src/glad.c || cmake_object_order_depends_target_glad
+  DEP_FILE = glad/CMakeFiles/glad.dir/src/glad.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glad/include
+  OBJECT_DIR = glad/CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = glad/CMakeFiles/glad.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library glad/libglad.a
+
+build glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug glad/CMakeFiles/glad.dir/src/glad.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -fPIC -g
+  OBJECT_DIR = glad/CMakeFiles/glad.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = glad/libglad.a
+  TARGET_PDB = glad.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glad/edit_cache: phony glad/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization -B/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glad/rebuild_cache: phony glad/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/cmake/libigl.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw/edit_cache: phony glfw/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization -B/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw/rebuild_cache: phony glfw/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/context.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/init.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/input.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/window.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+build glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_Debug /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d
+  FLAGS = -fPIC -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall
+  INCLUDES = -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/include -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/libigl/external/glfw/src -I/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = glfw/src/CMakeFiles/glfw.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library glfw/src/libglfw3.a
+
+build glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug glfw/src/CMakeFiles/glfw.dir/context.c.o glfw/src/CMakeFiles/glfw.dir/init.c.o glfw/src/CMakeFiles/glfw.dir/input.c.o glfw/src/CMakeFiles/glfw.dir/monitor.c.o glfw/src/CMakeFiles/glfw.dir/vulkan.c.o glfw/src/CMakeFiles/glfw.dir/window.c.o glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o glfw/src/CMakeFiles/glfw.dir/egl_context.c.o glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -fPIC -g
+  OBJECT_DIR = glfw/src/CMakeFiles/glfw.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = glfw/src/libglfw3.a
+  TARGET_PDB = glfw3.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw/src/edit_cache: phony glfw/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src && /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization -B/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw/src/rebuild_cache: phony glfw/src/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build core: phony libcore.a
+
+build glad: phony glad/libglad.a
+
+build glfw: phony glfw/src/libglfw3.a
+
+build libglad.a: phony glad/libglad.a
+
+build libglfw3.a: phony glfw/src/libglfw3.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug
+
+build all: phony libcore.a parametrization glad/all glfw/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad
+
+build glad/all: phony glad/libglad.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw
+
+build glfw/all: phony glfw/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src
+
+build glfw/src/all: phony glfw/src/libglfw3.a
+
+# =============================================================================
+# Unknown Build Time Dependencies.
+# Tell Ninja that they may appear as side effects of build rules
+# otherwise ordered by order-only dependencies.
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/FindLIBIGL.cmake ../libigl/cmake/CXXFeatures.cmake ../libigl/cmake/DownloadProject.CMakeLists.cmake.in ../libigl/cmake/DownloadProject.cmake ../libigl/cmake/LibiglDownloadExternal.cmake ../libigl/cmake/LibiglFolders.cmake ../libigl/cmake/LibiglWindows.cmake ../libigl/cmake/libigl.cmake ../libigl/external/glad/CMakeLists.txt ../libigl/external/glfw/CMakeLists.txt ../libigl/external/glfw/src/CMakeLists.txt ../libigl/external/glfw/src/glfw3.pc.in ../libigl/external/glfw/src/glfw3Config.cmake.in ../libigl/external/glfw/src/glfw_config.h.in /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseArguments.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindOpenGL.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../cmake/FindLIBIGL.cmake ../libigl/cmake/CXXFeatures.cmake ../libigl/cmake/DownloadProject.CMakeLists.cmake.in ../libigl/cmake/DownloadProject.cmake ../libigl/cmake/LibiglDownloadExternal.cmake ../libigl/cmake/LibiglFolders.cmake ../libigl/cmake/LibiglWindows.cmake ../libigl/cmake/libigl.cmake ../libigl/external/glad/CMakeLists.txt ../libigl/external/glfw/CMakeLists.txt ../libigl/external/glfw/src/CMakeLists.txt ../libigl/external/glfw/src/glfw3.pc.in ../libigl/external/glfw/src/glfw3Config.cmake.in ../libigl/external/glfw/src/glfw_config.h.in /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseArguments.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindOpenGL.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

@@ -1,0 +1,324 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "cmake/FindLIBIGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "libigl/cmake/libigl.cmake"
+		},
+		{
+			"path" : "libigl/cmake/LibiglDownloadExternal.cmake"
+		},
+		{
+			"path" : "libigl/cmake/DownloadProject.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "libigl/cmake/LibiglFolders.cmake"
+		},
+		{
+			"path" : "libigl/cmake/CXXFeatures.cmake"
+		},
+		{
+			"path" : "libigl/cmake/LibiglWindows.cmake"
+		},
+		{
+			"path" : "libigl/cmake/DownloadProject.CMakeLists.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "libigl/cmake/DownloadProject.CMakeLists.cmake.in"
+		},
+		{
+			"path" : "libigl/cmake/DownloadProject.CMakeLists.cmake.in"
+		},
+		{
+			"path" : "libigl/external/glad/CMakeLists.txt"
+		},
+		{
+			"path" : "libigl/external/glfw/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"path" : "libigl/external/glfw/src/glfw3Config.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/private/var/folders/x2/wwtxq68d2c3bmkx1g57vv_b40000gn/T/AppTranslocation/8D141441-E8A5-435E-831D-2EFD9AAE1C1E/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
+		},
+		{
+			"path" : "libigl/external/glfw/src/glfw_config.h.in"
+		},
+		{
+			"path" : "libigl/external/glfw/src/glfw3.pc.in"
+		},
+		{
+			"path" : "libigl/external/glfw/src/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug",
+		"source" : "/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

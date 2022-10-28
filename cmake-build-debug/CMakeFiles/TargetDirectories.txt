@@ -1,0 +1,12 @@
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/CMakeFiles/core.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/CMakeFiles/parametrization.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad/CMakeFiles/glad.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad/CMakeFiles/edit_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glad/CMakeFiles/rebuild_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/CMakeFiles/edit_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/CMakeFiles/rebuild_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src/CMakeFiles/glfw.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src/CMakeFiles/edit_cache.dir
+/Users/selenaling/Documents/what-i-should-know/classes/cs2520h-geometry-processing/geometry-processing-parameterization/cmake-build-debug/glfw/src/CMakeFiles/rebuild_cache.dir
